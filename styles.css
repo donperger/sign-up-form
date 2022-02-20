@@ -118,7 +118,7 @@ table {
     font-size: 25px;
     width: 600px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .form-container {
@@ -170,6 +170,8 @@ input:valid {
 
 textarea {
     resize: none;
+    width: 400px;
+    height: 200px;
     overflow-y: scroll;
     scrollbar-width: auto;
 }
@@ -215,7 +217,7 @@ textarea::-webkit-scrollbar {
     font-size: 0.4em;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1025px) {
     .layout,
     .logo-container,
     .cover,
@@ -266,6 +268,6 @@ textarea::-webkit-scrollbar {
     }
 
     textarea {
-        width: auto;
+        width: 300px;
     }
 }
