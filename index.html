@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Source+Code+Pro:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="layout">
@@ -18,7 +21,7 @@
                 <img src="./images/Web development _Outline.svg" alt="" class="logo">
                 <div class="title">DonPerger</div>
             </div>
-            <div class="credit">Photo by <a href="https://unsplash.com/@codestorm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Safar Safarov</a> on <a href="https://unsplash.com/s/photos/coding?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+            <div class="credit">Photo by <a class="credit-link" href="https://unsplash.com/@codestorm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Safar Safarov</a> on <a class="credit-link" href="https://unsplash.com/s/photos/coding?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
         </div>
 
         <div class="form">
@@ -27,20 +30,38 @@
             </div>
 
             <form action="" class="form-container">
-                <label for="firstName">First name</label>
-                <input type="text" id="firstName" name="first_name">
+                <legend>Contact me!</legend>
 
-                <label for="lastName">Last name</label>
-                <input type="text" id="lastName" name="last_name">
+                <div class="name">
+                    <div class="text-input">
+                        <label for="firstName">First name*</label>
+                        <input type="text" id="firstName" name="first_name" required placeholder="John" autofocus>
+                    </div>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+                    <div class="text-input">
+                        <label for="lastName">Last name*</label>
+                        <input type="text" id="lastName" name="last_name" required placeholder="Doe">
+                    </div>
+                </div>
 
-                <input type="checkbox" id="emailList" name="email-list">
-                <label for="emailList">Yes, I wish to recive emails from you</label>
+                <div class="email">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required placeholder="john.doe@exapmle.com">
+                </div>
 
-                <label for="message">Your message</label>
-                <textarea name="messafe" id="message" cols="30" rows="10"></textarea>
+                <div class="mail-list">
+                    <input type="checkbox" id="emailList" name="email-list" checked>
+                    <label for="emailList">Yes, I wish to recive emails from you</label>
+                </div>
+
+                <div class="message text-input">
+                    <label for="message">Your message*</label>
+                    <textarea name="message" id="message" cols="40" rows="12" maxlength="500" required placeholder="Sum up your message in maximum 500 charaters. For further conversations I will contact you by email."></textarea>
+                </div>
+
+                <button class="send-button">Send</button>
+
+                <div class="required">*required</div>
             </form>
         </div>
     </div>
